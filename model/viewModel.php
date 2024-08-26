@@ -4,10 +4,10 @@ class viewModel{
      * Model to get the views
      */
     protected static function getViewsModel($view){
-        $whiteList = [];
+        $whiteList = ["home", "client-list"];
         if (in_array($view, $whiteList)){
-            if (is_file("./view/content/".$view."-ui.php")){
-                $content ="./view/content/".$view."-ui.php";
+            if (is_file("./view/content/".$view."-view.php")){
+                $content ="./view/content/".$view."-view.php";
 
             } else{
                 $content = "404";

@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__ . '/../model/viewModel.php';
+require_once "./model/viewModel.php";
 class viewController extends viewModel {
     /*
      * Controller to get the template
      */
     public function getTemplateController(){
-        return require_once "./view/Template.php";
+        require_once "./view/Template.php";
     }
 
 
